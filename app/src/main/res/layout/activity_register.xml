@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B9EBE2"
+    tools:context=".Register">
+
+
+    <TextView
+    android:id="@+id/lblregister"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:layout_width="150dp"
+    android:textSize="25sp"
+    android:layout_height="wrap_content"
+    android:text="Register" />
+
+    <TextView
+        android:id="@+id/lblfirstname"
+        android:layout_below="@+id/lblregister"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Firstname" />
+
+    <EditText
+        android:id="@+id/txtfirstname"
+        android:layout_below="@+id/lblfirstname"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/lbllastname"
+        android:layout_below="@+id/txtfirstname"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Lastname" />
+
+    <EditText
+        android:id="@+id/txtlastname"
+        android:layout_below="@+id/lbllastname"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/lbldob"
+        android:layout_below="@+id/txtlastname"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth" />
+
+    <EditText
+        android:id="@+id/txtdob"
+        android:layout_below="@+id/lbldob"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/lblgender"
+        android:layout_below="@+id/txtdob"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Gender" />
+
+    <RadioGroup
+        android:id="@+id/rdbgrp"
+        android:layout_below="@+id/lblgender"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <RadioButton
+        android:id="@+id/rdbmale"
+
+        android:layout_below="@+id/rdbgrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male" />
+
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@+id/rdbmale"
+        android:layout_below="@+id/rdbgrp"
+        android:text="Female" />
+
+</RadioGroup>
+
+    <TextView
+        android:id="@+id/lblemail"
+        android:layout_below="@+id/rdbgrp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_below="@+id/lblemail"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/lblpassword1"
+        android:layout_below="@+id/txtemail"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/txtpassword1"
+        android:layout_below="@+id/lblpassword1"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+    <TextView
+        android:id="@+id/lblpassword2"
+        android:layout_below="@+id/txtpassword1"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Re-Type Password" />
+
+    <EditText
+        android:id="@+id/txtpassword2"
+        android:layout_below="@+id/lblpassword2"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/lblcontact"
+        android:layout_below="@+id/txtpassword2"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="Contact" />
+
+    <EditText
+        android:id="@+id/txtcontact"
+        android:layout_below="@+id/lblcontact"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_below="@+id/txtcontact"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/loginlink"
+        android:layout_below="@+id/txtcontact"
+        android:layout_marginLeft="@+id/btnsignup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Here" />
+
+</RelativeLayout>
